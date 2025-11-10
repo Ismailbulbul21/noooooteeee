@@ -1,0 +1,254 @@
+.deletion-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-page {
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  }
+}
+
+.deletion-container {
+  max-width: 900px;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-container {
+    background-color: #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.deletion-header {
+  background: linear-gradient(135deg, #646cff 0%, #535bf2 100%);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-bottom: 3px solid #535bf2;
+}
+
+.deletion-header h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .deletion-header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+.deletion-content {
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .deletion-content {
+    padding: 1.5rem;
+  }
+}
+
+.deletion-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: rgba(100, 108, 255, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid #646cff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-section {
+    background-color: rgba(100, 108, 255, 0.03);
+    border-left: 4px solid #646cff;
+  }
+}
+
+.deletion-section:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.15);
+}
+
+.deletion-section h2 {
+  color: #646cff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-section h2 {
+    color: #535bf2;
+  }
+}
+
+.deletion-section p {
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-section p {
+    color: #213547;
+  }
+}
+
+.deletion-section p:last-child {
+  margin-bottom: 0;
+}
+
+.deletion-section strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-section strong {
+    color: #000000;
+  }
+}
+
+.deletion-section ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.deletion-section ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.deletion-section li {
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-section li {
+    color: #213547;
+  }
+}
+
+.deletion-section a {
+  color: #646cff;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.deletion-section a:hover {
+  color: #535bf2;
+  border-bottom-color: #535bf2;
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-section a:hover {
+    color: #747bff;
+    border-bottom-color: #747bff;
+  }
+}
+
+.contact-section {
+  background: linear-gradient(135deg, rgba(100, 108, 255, 0.1) 0%, rgba(83, 91, 242, 0.1) 100%);
+  border-left: 4px solid #646cff;
+}
+
+.contact-email {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(100, 108, 255, 0.1);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.contact-email a {
+  color: #646cff;
+  font-size: 1.2rem;
+}
+
+.deletion-footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .deletion-footer {
+    background-color: rgba(0, 0, 0, 0.02);
+    color: rgba(33, 53, 71, 0.6);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.deletion-footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .deletion-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .deletion-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .deletion-section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .deletion-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .deletion-section p,
+  .deletion-section li {
+    font-size: 0.95rem;
+  }
+
+  .contact-email a {
+    font-size: 1rem;
+  }
+}
+
